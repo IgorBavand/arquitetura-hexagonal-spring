@@ -9,8 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class Config {
 
     @Bean
-    public EnderecoService enderecoService(EnderecoAdapter enderecoAdapter){
+    public EnderecoService enderecoService(EnderecoAdapter enderecoAdapter) {
         return new EnderecoService(enderecoAdapter);
     }
-
 }
