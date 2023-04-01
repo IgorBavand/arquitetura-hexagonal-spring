@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "buscar-endereco", url = "${app.config.services.via-cep.url}")
 public interface EnderecoClient {
 
-    @GetMapping( "{cep}/json")
+    @GetMapping("{cep}/json")
     ResponseEntity<Endereco> buscar(@PathVariable String cep);
 
 }

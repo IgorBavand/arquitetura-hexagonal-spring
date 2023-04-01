@@ -2,7 +2,6 @@ package com.hexagonal.example.example.arq.hexagonal.application.core.service;
 
 import com.hexagonal.example.example.arq.hexagonal.application.core.domain.Endereco;
 import com.hexagonal.example.example.arq.hexagonal.application.core.domain.EnderecoFrete;
-import com.hexagonal.example.example.arq.hexagonal.application.core.domain.constants.RegioesConstants;
 import com.hexagonal.example.example.arq.hexagonal.application.ports.in.EnderecoServicePort;
 import com.hexagonal.example.example.arq.hexagonal.application.ports.out.EnderecoPort;
 
