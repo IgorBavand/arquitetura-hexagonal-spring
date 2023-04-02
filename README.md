@@ -1,5 +1,6 @@
 # Arquitetura Hexagonal - pacotes na raiz:
 
+
 ## adapters:
 
 ### inbound:
@@ -27,34 +28,36 @@
 ---
 
 ### ports:
-        
-        - in (interface) //  service implementa - padrao usar o sufixo Port
-        - out (interface) // outbound implementa e a service usa - padrao usar o sufixo Port
+
+- in (interface) //  service implementa - padrao usar o sufixo Port
+  - out (interface) // outbound implementa e a service usa - padrao usar o sufixo Port
 
 
 ## Resumo:
 
- 
+
 adapters:
-    :  inbound 
-    :  uotbound
+    :  inbound
+:  uotbound
 
 ---
 
 config:
-    : configs
+: configs
 
 ---
 
- application:
-        core
-            : domain 
-            : service 
-            : exception
-         ports
-            : in
-            : out 
+application:
+core
+: domain
+: service
+: exception
+ports
+: in
+: out
 
         ports:
-            : in
-            : out 
+: in
+: out
+
+![imagem](https://media.licdn.com/dms/image/C4D12AQES-h5bvz2mtg/article-inline_image-shrink_1000_1488/0/1650235003343?e=1684972800&v=beta&t=gfDZ5RzJ11jMC1zRKAErLgGdj117KobrT4-IVIFzvOU)
